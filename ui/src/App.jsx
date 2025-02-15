@@ -32,19 +32,22 @@ function App() {
       {/* Sidebar */}
       <div style={{ 
         minWidth: "30%",
+        maxWidth:"300px",
         borderRight: "1px solid #f5f5f5",
         padding: "20px",
         backgroundColor: "#f5f5f5"
       }}>
         <h2>Notlar</h2>
         <div style={{ marginBottom: "20px" }}>
-          <input
+          <textarea
             type="text"
             value={note}
             onChange={(e) => setNote(e.target.value)}
             placeholder="Bir not girin..."
             style={{
               width: "100%",
+              maxWidth:"300px",
+              height:"30px",
               padding: "8px",
               marginBottom: "10px",
               borderRadius: "4px",
@@ -55,8 +58,9 @@ function App() {
             onClick={addNote}
             style={{
               width: "100%",
+              maxWidth:"300px",
               padding: "8px",
-              backgroundColor: "#4CAF50",
+              backgroundColor: "#00aeff",
               color: "white",
               border: "none",
               borderRadius: "4px",
@@ -74,6 +78,7 @@ function App() {
             <div 
               key={i}
               style={{
+                maxWidth:"300px",
                 padding: "10px",
                 marginBottom: "8px",
                 backgroundColor: "white",
@@ -97,7 +102,7 @@ function App() {
                   deleteNote(i);
                 }}
                 style={{
-                  backgroundColor: "#ff4444",
+                  backgroundColor: "#FF8383",
                   color: "white",
                   border: "none",
                   borderRadius: "4px",
@@ -107,7 +112,7 @@ function App() {
                   flexShrink: 0
                 }}
               >
-                Sil
+                <i className="fa fa-trash"></i>
               </button>
             </div>
           ))}
