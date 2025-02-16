@@ -119,7 +119,7 @@ function App() {
         </div>
       </div>
 
-      <div style={{ flex:1,padding: "20px", border:"1px solid #f5f5f5", borderRadius:"20px" }}>
+      <div style={{ flex:1,padding: "20px", border:"1px solid #f5f5f5", borderRadius:"0 20px 20px 0" }}>
         <h3>Not Detayları</h3>
         {showingNote ? (
           <p style={{ whiteSpace: "pre-wrap", wordBreak: "break-word" }}>{showingNote}</p>
